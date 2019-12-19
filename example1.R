@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(plotly)
 
 data("mtcars")
 
@@ -14,7 +15,8 @@ mtcars_summary <- mtcars %>%
 
 # Commit - 'summarize disp and hp by cyl'
 
-ggplot(mtcars, aes(x = disp, y = hp, colour = cyl)) + 
+ppoint <- ggplot(mtcars, aes(x = disp, y = hp, colour = cyl)) + 
   geom_point()
+ggplotly(ppoint)
 
 # Commit - 'Sometimes a graph is more informative than a table'
