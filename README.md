@@ -1,3 +1,3 @@
 repo_test_r
 
-bla bla bla sur ce projet
+geom_point tout simple
